@@ -6,7 +6,7 @@
     --light-grey-color: #EEEEEE;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 * {
@@ -32,7 +32,7 @@
     width: 40%;
     margin: 0 3rem;
     padding: 1rem 0;
-    font-size: 40px;
+    font-size: 1.5rem;
     list-style: none;
     cursor: pointer;
     border-bottom: 2px solid var(--main-color);
