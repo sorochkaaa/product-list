@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+:root {
+    --main-color: #4741BF;
+    --secondary-color: #645DE2;
+    --light-grey-color: #EEEEEE;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    margin: 1rem 0 3rem 0;
+}
+
+.list-container h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    border-bottom: solid double 2px var(--main-color);
+}
+
+.list-element {
+    text-align: center;
+    width: 40%;
+    margin: 0 3rem;
+    padding: 1rem 0;
+    font-size: 40px;
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.selected,
+.list-element:hover {
+    background-color: var(--light-grey-color);
+}
+
+
+.popup-description {
+    position: absolute;
+    max-width: 40%;
+    padding: 1rem;
+    border: 8px solid var(--main-color);
+    background-color: white;
+}
+
+.popup-description div {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+}
+
+.elem-img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.sort-options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 5rem;
+    box-shadow: inset 0 0 30px #737373;
+    background-color: var(--light-grey-color);
+}
+
+
+.sort-options-container button {
+    border: unset;
+    position: relative;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .8rem 1.5rem;
+    font: inherit;
+    font-weight: 700;
+    background: var(--secondary-color);
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
+.apply-btn:active,
+button.pressed-button {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.products-number-input {
+    width: 10rem;
+    padding: .8rem 1.5rem;
+    margin-top: .5rem;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 700;
+} 
+
+.products-number-error {
+    position: absolute;
+    font-size: .8rem;
+    font-weight: 600;
+    color: red;
+}
+
+.products-number-input:focus {
+    outline: 3px solid var(--secondary-color);
+}
+
